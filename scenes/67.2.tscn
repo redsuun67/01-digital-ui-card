@@ -1,28 +1,28 @@
 [gd_scene format=3 uid="uid://54a4kg1532c0"]
 
-[ext_resource type="Theme" uid="uid://diua5p0uia4nt" path="res://assets/new_theme.tres" id="1_olprv"]
-[ext_resource type="Script" uid="uid://daq5lng5siw0i" path="res://67.2.gd" id="2_q1opt"]
-[ext_resource type="Texture2D" uid="uid://bgi16xay35dt3" path="res://assets/ASSET_PACK/sprite.png" id="2_q5q1u"]
-[ext_resource type="PackedScene" uid="uid://dhw26fajbfh35" path="res://67.tscn" id="3_q1opt"]
+[ext_resource type="Theme" uid="uid://diua5p0uia4nt" path="res://assets/new_theme.tres" id="1_1xigx"]
+[ext_resource type="Script" uid="uid://daq5lng5siw0i" path="res://scripts/67.2.gd" id="2_1xigx"]
+[ext_resource type="PackedScene" uid="uid://dhw26fajbfh35" path="res://scenes/67.tscn" id="3_ne1fo"]
+[ext_resource type="Texture2D" uid="uid://bgi16xay35dt3" path="res://assets/ASSET_PACK/sprite.png" id="4_ccg6b"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_tmlmv"]
-atlas = ExtResource("2_q5q1u")
+atlas = ExtResource("4_ccg6b")
 region = Rect2(32, 16, 35, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ccx0n"]
-atlas = ExtResource("2_q5q1u")
+atlas = ExtResource("4_ccg6b")
 region = Rect2(29, 33, 38, 15)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_gnc6n"]
-atlas = ExtResource("2_q5q1u")
+atlas = ExtResource("4_ccg6b")
 region = Rect2(0, 48, 35, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_s5i6m"]
-atlas = ExtResource("2_q5q1u")
+atlas = ExtResource("4_ccg6b")
 region = Rect2(35, 49, 32, 15)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_heej0"]
-atlas = ExtResource("2_q5q1u")
+atlas = ExtResource("4_ccg6b")
 region = Rect2(16, 0, 16, 16)
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_jj4rq"]
@@ -39,14 +39,14 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme = ExtResource("1_olprv")
-script = ExtResource("2_q1opt")
+theme = ExtResource("1_1xigx")
+script = ExtResource("2_1xigx")
 Hp = NodePath("VBoxContainer/Hp/TextEdit")
 Hov = NodePath("VBoxContainer/Hov/TextEdit")
 Bag = NodePath("VBoxContainer/Bag/TextEdit")
 Wg = NodePath("VBoxContainer/Wg/TextEdit")
 Name_user = NodePath("VBoxContainer/Name/TextEdit")
-NextScene = ExtResource("3_q1opt")
+NextScene = ExtResource("3_ne1fo")
 
 [node name="Backround" type="ColorRect" parent="." unique_id=1524939774]
 layout_mode = 1
