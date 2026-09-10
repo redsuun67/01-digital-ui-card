@@ -1,0 +1,90 @@
+[gd_scene format=3 uid="uid://bc4n3k5tyxsac"]
+
+[ext_resource type="Texture2D" uid="uid://bgi16xay35dt3" path="res://assets/ASSET_PACK/sprite.png" id="1_0hol4"]
+[ext_resource type="Texture2D" uid="uid://dgxn8sdbddrnb" path="res://icon.svg" id="1_wtcfe"]
+[ext_resource type="Script" uid="uid://txxg5kxfrvkk" path="res://node_2d.gd" id="2_q6r6c"]
+[ext_resource type="FontFile" uid="uid://c4lqrcw1qmy4j" path="res://assets/ComicoroRu_0.ttf" id="4_kdubu"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6sgxd"]
+atlas = ExtResource("1_0hol4")
+region = Rect2(17, 1, 15, 15)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_qt31r"]
+texture = SubResource("AtlasTexture_6sgxd")
+
+[sub_resource type="Theme" id="Theme_m1bqw"]
+Button/styles/normal = SubResource("StyleBoxTexture_qt31r")
+
+[node name="Node2D" type="Control" unique_id=2028460697]
+layout_mode = 3
+anchor_right = 1.051
+anchor_bottom = 1.3720001
+offset_top = 2.0
+offset_right = -13.056
+offset_bottom = -47.10402
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_m1bqw")
+script = ExtResource("2_q6r6c")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=465641174]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.99600005
+anchor_bottom = 0.97700006
+offset_right = 0.023986816
+offset_bottom = 0.035995483
+color = Color(0.23137255, 1, 1, 1)
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=711999908]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -3.0
+offset_bottom = -1.0
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer" unique_id=2143387656]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="Icon" type="Sprite2D" parent="MarginContainer/VBoxContainer" unique_id=479422493]
+position = Vector2(-55, 20)
+scale = Vector2(0.53125, 0.51562506)
+texture = ExtResource("1_wtcfe")
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/VBoxContainer" unique_id=226417608]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer" unique_id=1405779114]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("4_kdubu")
+text = "кашель"
+
+[node name="Label2" type="Label" parent="MarginContainer/VBoxContainer" unique_id=668991631]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("4_kdubu")
+text = "кашель
+"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer" unique_id=1312302878]
+layout_mode = 2
+
+[node name="Button" type="Button" parent="MarginContainer/VBoxContainer/HBoxContainer" unique_id=1045474009]
+layout_mode = 2
+text = "+"
+
+[node name="Button2" type="Button" parent="MarginContainer/VBoxContainer/HBoxContainer" unique_id=233942065]
+layout_mode = 2
+size_flags_horizontal = 2
+size_flags_vertical = 4
+text = "-
+"

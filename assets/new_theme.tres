@@ -1,0 +1,23 @@
+[gd_resource type="Theme" format=3 uid="uid://diua5p0uia4nt"]
+
+[ext_resource type="FontFile" uid="uid://c4lqrcw1qmy4j" path="res://assets/ComicoroRu_0.ttf" id="1_6pma3"]
+[ext_resource type="Texture2D" uid="uid://bgi16xay35dt3" path="res://assets/ASSET_PACK/sprite.png" id="1_kxa5r"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_tmlmv"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6fscb"]
+atlas = ExtResource("1_kxa5r")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_kxa5r"]
+texture = SubResource("AtlasTexture_6fscb")
+texture_margin_left = 2.0
+texture_margin_top = 2.0
+texture_margin_right = 2.0
+texture_margin_bottom = 2.0
+region_rect = Rect2(0, 0, 16, 16)
+
+[resource]
+default_font = ExtResource("1_6pma3")
+PanelContainer/styles/panel = SubResource("StyleBoxTexture_tmlmv")
+TextEdit/styles/normal = SubResource("StyleBoxTexture_kxa5r")
